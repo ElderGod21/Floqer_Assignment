@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+.main-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.main-table caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+}
+.main-table:nth-child(1) tr{
+    cursor: pointer;
+}
+.main-table th{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.main-table td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.main-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.main-table tr:nth-child(odd){
+    background-color: #fff;
+}
+.main-table th, .main-table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.main-table th div{
+    display: inline;
+    width: max-content;
+    float: inline-end;
+}
+.main-table th div i{
+    display: block;
+}
+.main-table th div i:hover{
+    cursor: pointer;
+}
+body img{
+    width: 100%;
+    height: auto;
+}
+.hidden{
+    display: none;
+}

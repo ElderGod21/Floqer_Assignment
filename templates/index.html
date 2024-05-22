@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="main-table">
+      <caption>
+        Main Table
+      </caption>
+      <thead>
+        <tr>
+          <th>
+            Year
+            <div>
+              <i class="bx bxs-chevron-up up" id="years-up"></i
+              ><i class="bx bxs-chevron-down down" id="years-down"></i>
+            </div>
+          </th>
+          <th>
+            Number of Jobs (in that year)
+            <div>
+              <i class="bx bxs-chevron-up up" id="jobs-up"></i
+              ><i class="bx bxs-chevron-down down" id="jobs-down"></i>
+            </div>
+          </th>
+          <th>
+            Average Salary (in USD)
+            <div>
+              <i class="bx bxs-chevron-up up" id="avg_salary-up"></i
+              ><i class="bx bxs-chevron-down down" id="avg_salary-down"></i>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="table-body"></tbody>
+    </table>
+    <hr />
+    <img src="{{ url_for('visualize') }}" alt="Plot" />
+    <hr />
+    <table class="main-table hidden">
+      <caption>
+        Year Wise Division :
+        <span class="year-selected"></span>
+      </caption>
+      <thead>
+        <tr>
+          <th>Job Titles</th>
+          <th>Number of Jobs</th>
+        </tr>
+      </thead>
+      <tbody class="table-body-v2"></tbody>
+    </table>
+    <script src="../static/js/index.js"></script>
+  </body>
+</html>
